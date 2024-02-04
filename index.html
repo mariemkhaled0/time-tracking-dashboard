@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="box">
+      <div class="Jeremy-cont">
+        <div class="Jeremy-info">
+          <img src="images/image-jeremy.png" alt="Jeremy" class="Jeremy-img" />
+          <div class="jeremy-txt">
+            <p>Report for</p>
+            <h1 class="jeremy-h1">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="options">
+          <button class="daily">Daily</button>
+          <button class="weekly">Weekly</button>
+          <button class="monthly">Monthly</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="item work">
+          <div class="img-container">
+            <img src="images/icon-work.svg" />
+          </div>
+          <div class="item-cont">
+            <div class="header">
+              <p class="subject">Work</p>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h2 class="hours-cont">5hrs</h2>
+              <p class="last-hours">
+                <span class="text"> last week - </span
+                ><span class="last-h-cont">10h</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item play">
+          <div class="img-container">
+            <img src="images/icon-play.svg" alt="play icon" />
+          </div>
+          <div class="item-cont">
+            <div class="header">
+              <p class="subject">play</p>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h2 class="hours-cont"></h2>
+              <p class="last-hours">
+                <span class="text"> last week-</span>
+                <span class="last-h-cont">8hours</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item study">
+          <div class="img-container">
+            <img src="images/icon-study.svg" alt="study icon" />
+          </div>
+          <div class="item-cont">
+            <div class="header">
+              <p class="subject">study</p>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h2 class="hours-cont">11h</h2>
+              <p class="last-hours">
+                <span class="text">last week-</span>
+                <span class="last-h-cont">8hours</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item exercise">
+          <div class="img-container">
+            <img src="images/icon-exercise.svg" alt="icon-exercise" />
+          </div>
+          <div class="item-cont">
+            <div class="header">
+              <p class="subject">exercise</p>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h2 class="hours-cont"></h2>
+              <p class="last-hours">
+                <span class="text">last week-</span>
+                <span class="last-h-cont">8hours</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item social">
+          <div class="img-container">
+            <img src="images/icon-social.svg" alt="icon-social " />
+          </div>
+          <div class="item-cont">
+            <div class="header">
+              <p class="subject">social</p>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h2 class="hours-cont"></h2>
+              <p class="last-hours">
+                <span class="text">last week - </span
+                ><span class="last-h-cont">8hours</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item self-care">
+          <div class="img-container">
+            <img src="images/icon-self-care.svg" alt="icon-self-care" />
+          </div>
+          <div class="item-cont">
+            <div class="header">
+              <p class="subject">self care</p>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h2 class="hours-cont">10h</h2>
+              <p class="last-hours">
+                <span class="text">last week - </span>
+                <span class="last-h-cont">8hours</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">mariem khaled</a>.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&family=Overpass:wght@400;500&family=Poppins:wght@800&family=Rubik:ital,wght@0,400;0,500;1,300&family=Space+Grotesk:wght@500;700&display=swap");
+:root {
+  --Light-red: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+  --soft-Violet-social: hsl(265, 56%, 27%);
+  --font: "Rubik";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--font);
+  background-color: var(--Very-dark-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.box {
+  display: flex;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+.Jeremy-cont {
+  width: 200px;
+  margin-right: 2em;
+  background-color: var(--Dark-blue);
+  border-radius: 10px;
+  top: 24px;
+  position: relative;
+  height: 370px;
+}
+.Jeremy-img {
+  width: 60px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.Jeremy-info {
+  background-color: var(--Desaturated-blue);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.Jeremy-info p {
+  margin-top: 0.5em;
+}
+.jeremy-h1 {
+  font-size: 27px;
+  margin-top: 0.5em;
+  line-height: 1.3;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1.3em;
+  font-size: 14px;
+}
+.options button {
+  border-style: none;
+  background-color: transparent;
+  color: white;
+}
+.options button:not(:last-child) {
+  margin-bottom: 0.7em;
+}
+.options button {
+  cursor: pointer;
+}
+.options button:hover {
+  color: var(--Pale-Blue);
+}
+.work .img-container {
+  background-color: var(--Light-red);
+}
+.img-container {
+  position: relative;
+  z-index: -1;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  top: 1.4em;
+}
+.img-container img {
+  width: 40px;
+  right: 0;
+  position: absolute;
+  top: 5px;
+}
+.play .img-container {
+  background-color: var(--Soft-blue-play);
+}
+.exercise .img-container {
+  background-color: var(--Lime-green-exercise);
+}
+.study .img-container {
+  background-color: var(--Light-red-study);
+}
+.self-care .img-container {
+  background-color: var(--soft-orange-self-care);
+}
+.social .img-container {
+  background-color: var(--Violet-social);
+}
+.item {
+  border-radius: 10px;
+  z-index: 10;
+}
+.item-cont {
+  padding: 1em 2em;
+  z-index: 999;
+  background-color: var(--Dark-blue);
+  border-radius: 10px;
+  height: 8rem;
+  top: -4em;
+}
+
+.item-cont:hover {
+  background-color: var(--soft-Violet-social);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header img {
+  height: 5px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+.last-hours {
+  font-size: 13px;
+  margin-top: 0.6em;
+  color: var(--Pale-Blue);
+}
+.hours-cont {
+  margin-top: 0.6em;
+}
+@media (max-width: 760px) {
+  .box {
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    font-size: 14px;
+  }
+  footer {
+    display: none;
+  }
+  .Jeremy-cont {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .item {
+    width: 100%;
+  }
+  .Jeremy-info {
+    display: flex;
+  }
+  .Jeremy-img {
+    height: 60px;
+    margin-right: 1em;
+  }
+  .jeremy-h1 {
+    font-size: 18px;
+  }
+  .jeremy-txt p {
+    font-size: 14px;
+  }
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .item-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hours {
+    display: flex;
+    justify-content: space-between;
+  }
+}
